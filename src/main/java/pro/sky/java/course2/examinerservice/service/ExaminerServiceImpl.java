@@ -6,14 +6,11 @@ import pro.sky.java.course2.examinerservice.exceptions.ExceededLimitOfQuestionsE
 
 import java.util.Collection;
 import java.util.HashSet;
-import java.util.Random;
 import java.util.Set;
 
 @Service
 public class ExaminerServiceImpl implements ExaminerService {
     private final QuestionService service;
-    private Random random;
-
     public ExaminerServiceImpl(QuestionService service) {
         this.service = service;
     }

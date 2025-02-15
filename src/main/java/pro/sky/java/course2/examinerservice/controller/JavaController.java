@@ -23,7 +23,7 @@ public class JavaController {
         return service.getAll();
     }
     @DeleteMapping("/delete")
-    public Question removeQuestion(@RequestParam String question, @RequestParam String answer){
+    public Question deleteQuestion(@RequestParam String question, @RequestParam String answer){
         return service.remove(new Question(question,answer));
     }
 }
